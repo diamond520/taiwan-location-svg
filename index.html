@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Taiwan map</title>
+	<meta name='description' content='Taiwan map with location name svg file'>
+	<meta name='url' content='https://diamond520.github.io/taiwan-location-svg/'>
+	<meta name='topic' content='Taiwan map with location name svg file'>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <style>
     #taiwan {
@@ -87,7 +90,7 @@
 <script>
 $("path, circle").hover(function(e) {
     $('#info-box').css('display', 'block');
-    $('#info-box').html($(this).data('info'));
+    $('#info-box').html($(this).attr('title'));
 });
 
 $("path, circle").mouseleave(function(e) {
